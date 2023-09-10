@@ -1,14 +1,9 @@
-from app.notify.xray import HealthCheck
 from config import get_settings
-from app.notify.my_celery import app
-
+from notify.my_celery import app
+from notify.xray import HealthCheck
 
 # Load settings
 settings = get_settings()
-
-
-class VpnTypeMissingError(Exception):
-    pass
 
 
 @app.task
