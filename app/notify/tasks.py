@@ -1,6 +1,6 @@
 from app.notify.xray import HealthCheck
 from config import get_settings
-from app.notify.celery import app
+from app.notify.my_celery import app
 
 
 # Load settings
