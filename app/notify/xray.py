@@ -1,8 +1,7 @@
 from datetime import datetime
 
 from config import get_settings
-from app.notify.redis_client_sync import create_redis_connection_sync
-
+from notify.redis_client_sync import create_redis_connection_sync
 
 settings = get_settings()
 
